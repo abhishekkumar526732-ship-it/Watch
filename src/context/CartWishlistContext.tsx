@@ -188,13 +188,13 @@ export const CartWishlistProvider: React.FC<{ children: React.ReactNode }> = ({ 
 
   // Pricing math
   const subtotal = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
-  const shippingFee = subtotal > 2000 || subtotal === 0 ? 0 : 199;
+  const shippingFee = subtotal >= 999 || subtotal === 0 ? 0 : 79;
 
   let discountAmount = 0;
   if (appliedPromo === 'NEEK10') {
     discountAmount = Math.round(subtotal * 0.1);
   } else if (appliedPromo === 'GOLDEN') {
-    discountAmount = Math.min(1500, subtotal);
+    discountAmount = Math.min(500, Math.round(subtotal * 0.2));
   } else if (appliedPromo === 'FIRSTWATCH') {
     discountAmount = Math.round(subtotal * 0.15);
   }
@@ -210,8 +210,8 @@ export const CartWishlistProvider: React.FC<{ children: React.ReactNode }> = ({ 
     }
     if (clean === 'GOLDEN') {
       setAppliedPromo('GOLDEN');
-      showToast('Coupon GOLDEN applied! ₹1,500 royal discount saved', 'success');
-      return { success: true, message: '₹1,500 discount applied!' };
+      showToast('Coupon GOLDEN applied! Instant royal discount saved', 'success');
+      return { success: true, message: 'Royal discount applied!' };
     }
     if (clean === 'FIRSTWATCH') {
       setAppliedPromo('FIRSTWATCH');

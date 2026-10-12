@@ -21,13 +21,13 @@ const inMemoryOrders: any[] = [
     orderId: 'NEEK-2026-482910',
     date: 'Today, 10:15 AM',
     status: 'shipped',
-    total: 8499,
+    total: 1299,
     items: [
       {
         product: {
           id: 'classic-silver-analog-watch',
           name: 'Classic Silver Analog Watch',
-          price: 8499,
+          price: 1299,
           images: ['https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80'],
         },
         quantity: 1,

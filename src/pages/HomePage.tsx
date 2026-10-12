@@ -128,7 +128,7 @@ export const HomePage: React.FC = () => {
                     <div>
                       <p className="text-xs font-semibold text-amber-300">Featured Sovereign</p>
                       <p className="text-sm font-bold text-white">Premium Gold Automatic Watch</p>
-                      <p className="text-xs text-slate-300">₹29,999 · 21-Jewel Skeleton</p>
+                      <p className="text-xs text-slate-300">₹2,999 · 21-Jewel Skeleton</p>
                     </div>
                     <Link
                       to="/products/premium-gold-automatic-watch"

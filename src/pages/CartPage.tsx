@@ -81,7 +81,7 @@ export const CartPage: React.FC = () => {
     );
   }
 
-  const freeShippingThreshold = 2000;
+  const freeShippingThreshold = 999;
   const qualifiesForFreeShipping = subtotal >= freeShippingThreshold;
   const remainingForFreeShipping = Math.max(0, freeShippingThreshold - subtotal);
 
@@ -273,7 +273,7 @@ export const CartPage: React.FC = () => {
                   </p>
                 )}
                 <p className="text-[11px] text-slate-400">
-                  Try coupon code <strong>NEEK10</strong> for 10% off or <strong>GOLDEN</strong> for ₹1,500 off.
+                  Try coupon code <strong>NEEK10</strong> for 10% off or <strong>GOLDEN</strong> for royal savings.
                 </p>
               </div>
 
